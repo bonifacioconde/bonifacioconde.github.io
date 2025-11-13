@@ -1,56 +1,100 @@
-# Bonifacio Conde
+# Bonifacio Conde Jr.
+**iOS Engineer / Mobile Software Developer**  
+Cebu, Philippines  
 
-[Email](mailto:conde.bonifacio@yahoo.com) | [GitHub](https://github.com/bonifacioconde) 
+---
 
-## Summary
+## 👨‍💻 Professional Summary
+iOS Engineer with extensive experience delivering high-quality mobile applications for global clients across e-commerce, retail, white-label platforms, and social commerce. Skilled in building user-centered, scalable, and reliable iOS solutions, maintaining complex production systems, and collaborating with cross-functional remote teams. Strong background in performance optimization, debugging, and supporting both legacy and modern mobile architectures. Experienced in iOS native development and cross-platform technologies.
 
-Experienced iOS Developer skilled in Swift, SwiftUI, UIKit, and Objective-C. Expert in integrating third-party libraries, optimizing performance, and translating requirements into technical specifications. Proficient in Agile methodologies, unit testing, CI/CD, and Git. Committed to delivering high-quality code and exceptional user experiences in a dynamic iOS development role.
+---
 
-## Experience
+## 🛠 Skills
 
-### iOS Developer
-**SOLO Technology Services LLC(Remote)**, Saudi Arabia
-*August 2019 - Present*
+### **iOS Development**
+- Swift, SwiftUI, Objective-C  
+- UIKit, Combine, async/await  
 
-- Led the development of a white-label application designed to help companies quickly release new apps to clients while reducing costs
-- Integrated third-party libraries and APIs using CocoaPods, Carthage, and other frameworks
-- Developed custom UI components with animations and transitions to improve user experience
-- Optimized application code to improve the speed and performance of the application
+### **Cross-Platform**
+- Flutter  
+- Kotlin Multiplatform (KMP)  
 
+### **Architecture**
+- MVVM, MVC, Clean Architecture  
 
-### iOS Developer
-**Browzzin Pte Ltd(Remote)**, Singapore
-*March 2017 - July 2019*
+### **Technologies & Tools**
+- REST APIs, JSON  
+- Git, Fastlane, Firebase  
+- Xcode, App Store Connect  
+- Push Notifications  
 
-- Developed an iOS application that leverages proprietary web-based deep learning AI technology to enhance the e-commerce capabilities of physical stores.
+### **Practices**
+- Code Review  
+- Unit Testing  
+- Performance Optimization  
+- Debugging  
+- Agile / Scrum  
 
+---
 
-### iOS Developer
-**UpNixt Pte Ltd(Remote)**, Singapore
-*May 2013 - November 2017*
+## 📂 Work Experience
 
-- Created a social app inspired by Facebook, focusing on user travel itineraries and enabling users to share their experiences on the platform.
+### **Foodics (Remote)**  
+**iOS Engineer** | *Sept 2024 – Present*  
+- Maintain and support the company’s existing mobile application following acquisition through bug fixes, stability improvements, and technical support.  
+- Collaborate with the team in building a new mobile application with improved performance and scalable architecture.  
 
-### iOS Developer
-**SG Coders Pte Ltd(Remote)**, Singapore
-*August 2012 - November 2013*
+---
 
-- Optimized application code to improve the speed and performance of the application
+### **SOLO Technology Services LLC (Remote)**  
+**iOS Developer** | *Aug 2019 – Sept 2024*  
+- Contributed to the development of a scalable white-label mobile platform enabling rapid deployment of branded client apps.  
+- Reduced development effort through reusable modules, shared architecture, and maintainable code structure.  
+- Supported performance improvements, debugging, and feature integration across multiple client implementations.  
 
-### Software Engineer 
-**Accenture Cebu Center Philippines**, Cebu Philippines, Cebu
-*August 2012 - November 2013*
+---
 
-- Trained for SAP ABAP and Siebel Technologies.
+### **Browzzin Pte Ltd (Remote)**  
+**iOS Developer** | *Mar 2017 – July 2019*  
+- Built and maintained an AI-powered fashion/social-commerce app integrating deep-learning and image-recognition features.  
+- Supported offline-to-online retail experiences and delivered influencer-driven shopping functionalities.  
+- Collaborated with backend and data teams to ensure stable API integration and smooth user experience.  
 
-### Software Development Engineer 
-**NCR Cebu Center Philippines**, Cebu Philippines, Cebu
-*January 2007 - December 2010*
+---
 
-- Integrate POS and Customize base code for Self-serve checkout
+### **UpNixt Pte Ltd, Singapore (Remote/Part-Time)**  
+**iOS Developer** | *May 2013 – Nov 2017*  
+- Contributed to building a social travel app enabling itinerary creation, sharing, and social engagement.  
+- Collaborated with UI/UX and backend teams to deliver cohesive, user-friendly features.  
+- Improved performance, responsiveness, and scalability for a growing user base.  
 
-## Education
+---
+
+### **SG Coders Pte Ltd, Singapore**  
+**Software Engineer** | *Aug 2012 – Nov 2013*  
+- Optimized iOS application code for improved speed, responsiveness, and stability.  
+- Supported debugging, maintenance, and feature enhancements to ensure long-term reliability.  
+
+---
+
+### **Accenture Cebu Center Philippines**  
+**Software Engineer** | *Mar 2011 – June 2012*  
+- Completed technical training in SAP ABAP and Siebel development, gaining foundational knowledge in enterprise software and structured delivery practices.  
+
+---
+
+### **NCR Cebu Center Philippines**  
+**Software Development Engineer** | *Jan 2007 – Dec 2010*  
+- Customized and extended NCR’s self-checkout POS codebase to support various retail client workflows.  
+- Resolved software and hardware issues to improve system reliability and deployment stability.  
+- Assisted in integration, testing, and maintenance of retail POS systems.  
+
+---
+
+## 🎓 Education
 
 **Bachelor of Science in Information Technology**  
-Cebu Institute of Technology University, Cebu Philippines, Cebu
-*Graduated Oct 2006*
+*Cebu Institute of Technology – University*  
+March 2003 – October 2006  
+
+---
