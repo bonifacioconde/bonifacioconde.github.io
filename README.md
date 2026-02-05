@@ -39,22 +39,28 @@ iOS Engineer with extensive experience delivering high-quality mobile applicatio
 
 ## 📂 Work Experience
 
-### **Foodics (Remote)**  
-**iOS Engineer** | *Sept 2024 – Present*  
+### **SOLO Technology Services LLC (Remote)**
+**iOS Software Engineer** | *Sept 2024 – Present*  
 - Maintain and support the company’s existing mobile application following acquisition through bug fixes, stability improvements, and technical support.  
 - Collaborate with the team in building a new mobile application with improved performance and scalable architecture.  
 
 ---
 
-### **SOLO Technology Services LLC (Remote)**  
-**iOS Developer** | *Aug 2019 – Sept 2024*  
-- Contributed to the development of a scalable white-label mobile platform enabling rapid deployment of branded client apps.  
-- Reduced development effort through reusable modules, shared architecture, and maintainable code structure.  
-- Supported performance improvements, debugging, and feature integration across multiple client implementations.  
+### **Appetiser Apps Pty Ltd (Remote)**
+**iOS Developer** | *Mar 2021 – July 2024*  
+- Integrated third-party libraries and APIs using CocoaPods, Carthage, and other frameworks.  
+- Developed custom UI components with animations and transitions to enhance user experience.  
+- Optimized application code to improve speed and performance.  
 
 ---
 
-### **Browzzin Pte Ltd (Remote)**  
+### **Skyline Dynamics (Remote)**
+**iOS Developer** | *Aug 2019 – Jan 2021*  
+- Led the development of a white-label application enabling rapid client app releases while reducing costs.  
+
+---
+
+### **Browzzin Pte Ltd (Remote)**
 **iOS Developer** | *Mar 2017 – July 2019*  
 - Built and maintained an AI-powered fashion/social-commerce app integrating deep-learning and image-recognition features.  
 - Supported offline-to-online retail experiences and delivered influencer-driven shopping functionalities.  
@@ -62,7 +68,7 @@ iOS Engineer with extensive experience delivering high-quality mobile applicatio
 
 ---
 
-### **UpNixt Pte Ltd, Singapore (Remote/Part-Time)**  
+### **UpNixt Pte Ltd, Singapore (Remote/Part-Time)**
 **iOS Developer** | *May 2013 – Nov 2017*  
 - Contributed to building a social travel app enabling itinerary creation, sharing, and social engagement.  
 - Collaborated with UI/UX and backend teams to deliver cohesive, user-friendly features.  
@@ -70,20 +76,20 @@ iOS Engineer with extensive experience delivering high-quality mobile applicatio
 
 ---
 
-### **SG Coders Pte Ltd, Singapore**  
+### **SG Coders Pte Ltd, Singapore**
 **Software Engineer** | *Aug 2012 – Nov 2013*  
 - Optimized iOS application code for improved speed, responsiveness, and stability.  
 - Supported debugging, maintenance, and feature enhancements to ensure long-term reliability.  
 
 ---
 
-### **Accenture Cebu Center Philippines**  
+### **Accenture Cebu Center, Philippines**
 **Software Engineer** | *Mar 2011 – June 2012*  
 - Completed technical training in SAP ABAP and Siebel development, gaining foundational knowledge in enterprise software and structured delivery practices.  
 
 ---
 
-### **NCR Cebu Center Philippines**  
+### **NCR Cebu Center, Philippines**
 **Software Development Engineer** | *Jan 2007 – Dec 2010*  
 - Customized and extended NCR’s self-checkout POS codebase to support various retail client workflows.  
 - Resolved software and hardware issues to improve system reliability and deployment stability.  
@@ -95,6 +101,6 @@ iOS Engineer with extensive experience delivering high-quality mobile applicatio
 
 **Bachelor of Science in Information Technology**  
 *Cebu Institute of Technology – University*  
-March 2003 – October 2006  
+*Oct 2006 | Cebu, Philippines*  
 
 ---
