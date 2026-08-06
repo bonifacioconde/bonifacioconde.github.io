@@ -1,15 +1,17 @@
-// 
+//
 // Colors
-// 
+//
 
 // Pre-state grayscale colors used in other variables
 
 $gray-800: #343a40;
 
-// Override Bootstrap color system
+// Palette — muted slate, no bright accent.
+// (Stock theme used $orange: #bd5d38, the most recognisable signature of the
+// Start Bootstrap Resume template. Changed to de-template the page.)
 
-$orange: #bd5d38;
+$slate: #334155;
 
 // Override Bootstrap default state colors
 
-$primary: $orange;
+$primary: $slate;
