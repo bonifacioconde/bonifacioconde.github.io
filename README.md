@@ -2,7 +2,7 @@
 
 Source for my online CV, deployed to GitHub Pages.
 
-**Live:** https://bonifacioconde.github.io/resume/
+**Live:** https://bonifacioconde.github.io
 
 Built on the [Start Bootstrap Resume](https://startbootstrap.com/theme/resume) theme (Pug + Sass + Bootstrap 5).
 
@@ -10,7 +10,7 @@ Built on the [Start Bootstrap Resume](https://startbootstrap.com/theme/resume) t
 
 ## Editing the content
 
-All content lives in **`src/pug/index.pug`**. Edit that file, not `dist/index.html` — `dist/` is generated and gets overwritten on every build.
+All content lives in **`src/pug/index.pug`**. Edit that file, not `docs/index.html` — `docs/` is generated and gets overwritten on every build.
 
 Styling lives in `src/scss/`:
 
@@ -19,6 +19,8 @@ Styling lives in `src/scss/`:
 - `src/scss/sections/_resume-section.scss` — section layout
 - `src/scss/components/_sidenav.scss` — the fixed sidebar nav
 
+Profile photo: `src/assets/img/profile.jpg` (square, 500×500 or larger). The build copies it into `docs/`.
+
 ---
 
 ## Local development
@@ -26,7 +28,7 @@ Styling lives in `src/scss/`:
 ```bash
 npm install
 npm start        # builds and serves at http://localhost:3000 with live reload
-npm run build    # one-off build into dist/
+npm run build    # one-off build into docs/
 ```
 
 Requires Node 18+.
@@ -35,26 +37,44 @@ Requires Node 18+.
 
 ## Deployment
 
-Deployment is automatic. `.github/workflows/deploy.yml` runs on every push to `master`:
-it installs dependencies, runs `npm run build`, and publishes `dist/` to GitHub Pages.
+GitHub Pages serves the site **directly from the committed `docs/` folder** on `master`.
+There is no deployment pipeline — pushing the built files *is* the deploy.
 
-**One-time setup in the repo settings:**
+Repo setting, once: **Settings → Pages → Build and deployment → Source → Deploy from a
+branch → Branch: `master`, Folder: `/docs`**.
 
-1. **Settings → Pages → Build and deployment → Source:** select **GitHub Actions**.
-2. Push to `master`. The workflow deploys and the URL appears under **Actions → Deploy to GitHub Pages**.
+**Publishing a change:**
 
-To deploy manually without pushing: **Actions → Deploy to GitHub Pages → Run workflow**.
+```bash
+# edit src/pug/index.pug
+npm run build          # regenerates docs/
+git add -A
+git commit -m "..."
+git push               # live in ~30s
+```
+
+The one hazard of this setup is pushing a source change without rebuilding, which leaves the
+published site stale. `.github/workflows/verify.yml` guards against that: it rebuilds on every
+push and fails if `docs/` doesn't match `src/`.
+
+> Previously this used an Actions-based Pages deployment (`actions/deploy-pages`). Deployments
+> were accepted by the API but sat in `deployment_queued` indefinitely and never published, on
+> two separate repositories, with GitHub Pages reporting Operational. Serving straight from a
+> branch avoids the deployment API entirely.
 
 ---
 
-## Still to fill in
+## Notes for future me
 
-Placeholders in `src/pug/index.pug` marked with square brackets:
-
-- `[professional email]`, `[handle]` — contact and social links
-- `[N]`, `[X]`, `[Y]` — metrics in the summary and experience bullets
-- `[App Name]` / `[id]` — App Store links in the **Shipped Apps** section
-- `assets/img/profile.jpg` — replace with your own photo (same filename, square crop)
+- **Shipped Apps section** is commented out at the bottom of `src/pug/index.pug`. To bring it
+  back, uncomment the block and restore its nav item:
+  `li.nav-item > a.nav-link.js-scroll-trigger(href='#shipped') Shipped`
+- **Font Awesome** is loaded as the CSS build from cdnjs, not the JS build the theme ships with.
+  The JS build silently fails to render icons when the page is opened over `file://`.
+- **`scripts/render-pug.js`** uses `htmlWhitespaceSensitivity: 'css'` (the theme default was
+  `'ignore'`). With `'ignore'`, Prettier breaks lines after inline tags like `</strong>`, and the
+  browser collapses that newline into a visible space before the following punctuation.
+- Keep bullets to claims that can be backed up if asked in an interview.
 
 ---
 
