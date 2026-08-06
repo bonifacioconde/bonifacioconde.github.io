@@ -1,106 +1,63 @@
-# Bonifacio Conde Jr.
-**iOS Engineer / Mobile Software Developer**  
-Cebu, Philippines  
+# Bonifacio Conde Jr — Online CV
+
+Source for my online CV, deployed to GitHub Pages.
+
+**Live:** https://bonifacioconde.github.io/resume/
+
+Built on the [Start Bootstrap Resume](https://startbootstrap.com/theme/resume) theme (Pug + Sass + Bootstrap 5).
 
 ---
 
-## 👨‍💻 Professional Summary
-iOS Engineer with extensive experience delivering high-quality mobile applications for global clients across e-commerce, retail, white-label platforms, and social commerce. Skilled in building user-centered, scalable, and reliable iOS solutions, maintaining complex production systems, and collaborating with cross-functional remote teams. Strong background in performance optimization, debugging, and supporting both legacy and modern mobile architectures. Experienced in iOS native development and cross-platform technologies.
+## Editing the content
+
+All content lives in **`src/pug/index.pug`**. Edit that file, not `dist/index.html` — `dist/` is generated and gets overwritten on every build.
+
+Styling lives in `src/scss/`:
+
+- `src/scss/variables/_colors.scss` — theme colors
+- `src/scss/variables/_typography.scss` — fonts
+- `src/scss/sections/_resume-section.scss` — section layout
+- `src/scss/components/_sidenav.scss` — the fixed sidebar nav
 
 ---
 
-## 🛠 Skills
+## Local development
 
-### **iOS Development**
-- Swift, SwiftUI, Objective-C  
-- UIKit, Combine, async/await  
+```bash
+npm install
+npm start        # builds and serves at http://localhost:3000 with live reload
+npm run build    # one-off build into dist/
+```
 
-### **Cross-Platform**
-- Flutter  
-- Kotlin Multiplatform (KMP)  
-
-### **Architecture**
-- MVVM, MVC, Clean Architecture  
-
-### **Technologies & Tools**
-- REST APIs, JSON  
-- Git, Fastlane, Firebase  
-- Xcode, App Store Connect  
-- Push Notifications  
-
-### **Practices**
-- Code Review  
-- Unit Testing  
-- Performance Optimization  
-- Debugging  
-- Agile / Scrum  
+Requires Node 18+.
 
 ---
 
-## 📂 Work Experience
+## Deployment
 
-### **SOLO Technology Services LLC (Remote)**
-**iOS Software Engineer** | *Sept 2024 – Present*  
-- Maintain and support the company’s existing mobile application following acquisition through bug fixes, stability improvements, and technical support.  
-- Collaborate with the team in building a new mobile application with improved performance and scalable architecture.  
+Deployment is automatic. `.github/workflows/deploy.yml` runs on every push to `master`:
+it installs dependencies, runs `npm run build`, and publishes `dist/` to GitHub Pages.
 
----
+**One-time setup in the repo settings:**
 
-### **Appetiser Apps Pty Ltd (Remote)**
-**iOS Developer** | *Mar 2021 – July 2024*  
-- Integrated third-party libraries and APIs using CocoaPods, Carthage, and other frameworks.  
-- Developed custom UI components with animations and transitions to enhance user experience.  
-- Optimized application code to improve speed and performance.  
+1. **Settings → Pages → Build and deployment → Source:** select **GitHub Actions**.
+2. Push to `master`. The workflow deploys and the URL appears under **Actions → Deploy to GitHub Pages**.
+
+To deploy manually without pushing: **Actions → Deploy to GitHub Pages → Run workflow**.
 
 ---
 
-### **Skyline Dynamics (Remote)**
-**iOS Developer** | *Aug 2019 – Jan 2021*  
-- Led the development of a white-label application enabling rapid client app releases while reducing costs.  
+## Still to fill in
+
+Placeholders in `src/pug/index.pug` marked with square brackets:
+
+- `[professional email]`, `[handle]` — contact and social links
+- `[N]`, `[X]`, `[Y]` — metrics in the summary and experience bullets
+- `[App Name]` / `[id]` — App Store links in the **Shipped Apps** section
+- `assets/img/profile.jpg` — replace with your own photo (same filename, square crop)
 
 ---
 
-### **Browzzin Pte Ltd (Remote)**
-**iOS Developer** | *Mar 2017 – July 2019*  
-- Built and maintained an AI-powered fashion/social-commerce app integrating deep-learning and image-recognition features.  
-- Supported offline-to-online retail experiences and delivered influencer-driven shopping functionalities.  
-- Collaborated with backend and data teams to ensure stable API integration and smooth user experience.  
+## License
 
----
-
-### **UpNixt Pte Ltd, Singapore (Remote/Part-Time)**
-**iOS Developer** | *May 2013 – Nov 2017*  
-- Contributed to building a social travel app enabling itinerary creation, sharing, and social engagement.  
-- Collaborated with UI/UX and backend teams to deliver cohesive, user-friendly features.  
-- Improved performance, responsiveness, and scalability for a growing user base.  
-
----
-
-### **SG Coders Pte Ltd, Singapore**
-**Software Engineer** | *Aug 2012 – Nov 2013*  
-- Optimized iOS application code for improved speed, responsiveness, and stability.  
-- Supported debugging, maintenance, and feature enhancements to ensure long-term reliability.  
-
----
-
-### **Accenture Cebu Center, Philippines**
-**Software Engineer** | *Mar 2011 – June 2012*  
-- Completed technical training in SAP ABAP and Siebel development, gaining foundational knowledge in enterprise software and structured delivery practices.  
-
----
-
-### **NCR Cebu Center, Philippines**
-**Software Development Engineer** | *Jan 2007 – Dec 2010*  
-- Customized and extended NCR’s self-checkout POS codebase to support various retail client workflows.  
-- Resolved software and hardware issues to improve system reliability and deployment stability.  
-- Assisted in integration, testing, and maintenance of retail POS systems.  
-
----
-
-## 🎓 Education
-
-**Bachelor of Science in Information Technology**  
-*Cebu Institute of Technology – University*  
-*Oct 2006 | Cebu, Philippines*  
-
----
+Theme: MIT (Start Bootstrap). Content: © Bonifacio Conde Jr.
