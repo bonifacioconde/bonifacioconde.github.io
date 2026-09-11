@@ -1,27 +1,22 @@
 //
-// Variables
+// Typography
 //
 
-// Override Bootstrap typography variables
-//
-// System font stack for body and headings — no webfont requests, instant
-// render, native on macOS/iOS. (Stock theme loaded Muli + Saira Extra
-// Condensed from Google Fonts; the condensed headings are one of the
-// template's most recognisable features.)
+// Kendall uses Open Sans throughout, with a system fallback stack so the
+// page still renders correctly if the webfont request fails.
 
 $system-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
 
-$font-family-base: $system-stack;
-$headings-font-family: $system-stack;
+$open-sans: "Open Sans", #{$system-stack};
+
+$font-family-base: $open-sans;
+$headings-font-family: $open-sans;
 
 $headings-font-weight: 700;
+$headings-color: #363636;
 
-$headings-color: #111827;
-
-// Restrained heading scale (stock theme: 6rem / 3.5rem / 2rem)
-
-$h1-font-size: 3.25rem;
-$h2-font-size: 1.75rem;
+$h1-font-size: 2.25rem;
+$h2-font-size: 1.5rem;
 $h3-font-size: 1.2rem;

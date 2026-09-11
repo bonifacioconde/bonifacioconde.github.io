@@ -1,11 +1,8 @@
-// 
+//
 // Spacing
-// 
+//
 
-// Spacing variable to set the sidebar base width
+// Width of the white card's inner padding. The Kendall layout is a single
+// centered column, so the sidebar variables the previous theme used are gone.
 
-$sidebar-base-width: 17rem;
-
-// Spacing variable to add padding to the top of the body element that matches the height of the navbar
-
-$navbar-base-height: 3.375rem;
+$card-padding: 2rem;

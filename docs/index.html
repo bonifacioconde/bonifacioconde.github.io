@@ -9,7 +9,7 @@
         <!-- Open Graph / social preview-->
         <meta property="og:type" content="profile" />
         <meta property="og:title" content="Bonifacio Conde Jr — iOS &amp; Flutter Developer" />
-        <meta property="og:description" content="iOS and Flutter developer. Worked on white-label ordering apps and iPad kiosk software. Swift, SwiftUI, Flutter, Fastlane, ePOS-Print integrations." />
+        <meta property="og:description" content="Bonifacio Conde Jr — iOS &amp; Flutter Developer. Mobile engineering with a focus on iOS, including white-label ordering and kiosk apps for F&amp;B brands." />
         <meta property="og:image" content="assets/img/profile.jpg" />
         <meta name="twitter:card" content="summary" />
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
@@ -19,215 +19,195 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top"
-                ><span class="d-block d-lg-none">Bonifacio Conde Jr</span><span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="Bonifacio Conde Jr" /></span></a
-            ><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+        <div class="container">
+            <!-- Header — circular photo overlapping the top of the card-->
+            <div class="text-center" id="photo-header">
+                <div id="photo"><img src="assets/img/profile.jpg" alt="Bonifacio Conde Jr" /></div>
+            </div>
+            <div class="text-center" id="text-header">
+                <h1>Bonifacio Conde Jr<span>iOS &amp; Flutter Developer</span></h1>
+                <div class="header-meta">Cebu, Philippines · Remote (GMT+8, overlaps EU/MENA)</div>
+            </div>
+            <!-- About-->
+            <div class="box" id="about">
+                <h2>About</h2>
+                <p>I’m a mobile developer working mainly on iOS, with the rest of my time across Flutter and POS and retail systems. At Solo I worked on white‑label iOS apps and iPad kiosk software for F&amp;B brands; after the product was acquired by Foodics in 2022, I kept contributing to their mobile apps in Swift and Flutter.</p>
+                <p>Most of my work has been on the practical side — helping make releases repeatable across branded builds, keeping older codebases stable, and getting kiosk and printer hardware to behave reliably in real service conditions. I’ve worked remotely with teams in Riyadh, Singapore, and Australia, and I’m happy picking up an existing codebase and working within a team’s conventions.</p>
+            </div>
+            <!-- Work Experience-->
+            <div class="box" id="work">
+                <h2>Work Experience</h2>
+                <div class="job">
+                    <div class="details">
+                        <span class="where">Appetiser Apps</span><span class="year">Jan 2025 — Aug 2026</span>
+                        <div class="note">Australia (Remote)</div>
+                    </div>
+                    <div class="job-details">
+                        <div class="profession">iOS Developer</div>
+                        <ul class="highlights">
+                            <li>Worked on livestock tracking, paddock treatment records, and reporting for <strong>FarmApp</strong> in Swift/UIKit — <strong>MapKit</strong> overlays and <strong>Core Location</strong> for paddock boundaries, with records written to <strong>Core Data</strong> first and reconciled against the API on reconnect, so the app stayed usable in zero-signal field conditions.</li>
+                            <li>
+                                Built iOS features for <strong><a href="https://www.thedynaapp.com/" target="_blank" rel="noopener">Dyna</a></strong
+                                >, a food discovery and review app, in <strong>SwiftUI</strong> and UIKit — restaurant search with debounced queries and paginated results, saved places, the review posting flow, and the profile and follow screens.
+                            </li>
+                            <li>Wrote the networking layer in Swift with <strong>URLSession</strong>, <strong>Codable</strong>, and <strong>async/await</strong> behind a protocol-backed client, and covered it and the view models in <strong>XCTest</strong> by stubbing responses through a custom <strong>URLProtocol</strong>, so tests ran offline and deterministically in CI.</li>
+                            <li>Traced recurring crashes and jank in legacy <strong>Objective-C</strong> and Swift projects using <strong>Instruments</strong> and <strong>Crashlytics</strong> stack traces — unowned references outliving their owners, and image decode running on the main thread during scrolling — and fixed them at the source.</li>
+                            <li>Automated App Store and TestFlight submissions with <strong>Fastlane</strong>, using match for code signing so release builds did not depend on one machine’s keychain.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job">
+                    <div class="details">
+                        <span class="where">Foodics</span><span class="year">July 2022 — Dec 2024</span>
+                        <div class="note">Riyadh, Saudi Arabia (Remote)</div>
+                    </div>
+                    <div class="job-details">
+                        <div class="profession">Software Engineer — iOS &amp; Flutter</div>
+                        <ul class="highlights">
+                            <li>Helped consolidate signing, screenshot generation, and store submission into shared Fastlane lanes run from GitHub Actions, which made per-brand releases noticeably quicker and more repeatable.</li>
+                            <li>Built cross-platform features in Flutter using Riverpod for state management and Retrofit for networking, so a feature could be implemented once rather than twice.</li>
+                            <li>Contributed to stability work on an inherited post-acquisition codebase — adding structured logging, working through frequent crashes, and adding tests around the checkout flow.</li>
+                            <li>Reviewed Swift and Dart pull requests and helped keep the team’s review checklist up to date.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job">
+                    <div class="details">
+                        <span class="where">Solo</span><span class="year">Nov 2018 — June 2022</span>
+                        <div class="note">Riyadh, Saudi Arabia (Remote) — product and team acquired by Foodics, 2022</div>
+                    </div>
+                    <div class="job-details">
+                        <div class="profession">iOS Developer — White-Label &amp; Kiosk Products</div>
+                        <ul class="highlights">
+                            <li>Worked on white-label iOS ordering apps for F&amp;B brands from a shared configurable codebase, with per-brand theming, feature flags, and remote config.</li>
+                            <li>Contributed to an iPad kiosk app that renders each merchant’s branding and menu from their account configuration, and integrated the Epson ePOS-Print SDK with retry logic and an offline print queue so receipts still printed when the network dropped.</li>
+                            <li>Helped template the Fastlane lanes so brand builds could be shipped from a single command instead of by hand.</li>
+                            <li>Took part in moving the app towards MVVM with dependency-injected services, and added unit tests as the structure allowed.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="job">
+                    <div class="details">
+                        <span class="where">Browzzin</span><span class="year">Mar 2017 — Oct 2018</span>
+                        <div class="note">Singapore (Remote) — AI-powered fashion social commerce</div>
+                    </div>
+                    <div class="job-details">
+                        <div class="profession">iOS Developer</div>
+                        <ul class="highlights">
+                            <li>Built outfit-discovery, share, and shop screens for an AI outfit-recognition shopping app in Swift/UIKit.</li>
+                            <li>Improved feed scrolling on older devices by moving image decode off the main thread and adding prefetch caching.</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3 class="subsection">Earlier Experience</h3>
+                <div class="job job-earlier">
+                    <div class="details"><span class="where">UpNixt Pte Ltd · Singapore (Remote)</span><span class="year">Nov 2013 — Feb 2017</span></div>
+                    <div class="job-details">
+                        <div class="profession">iOS Developer</div>
+                        <p class="description">Worked on itinerary sync and cold-start time for a social travel app, shipping regular releases alongside UI/UX and backend teams across several time zones.</p>
+                    </div>
+                </div>
+                <div class="job job-earlier">
+                    <div class="details"><span class="where">SG Coders Pte Ltd · Singapore</span><span class="year">Aug 2012 — Aug 2013</span></div>
+                    <div class="job-details">
+                        <div class="profession">Software Engineer</div>
+                        <p class="description">Used Instruments to find and remove main-thread blocking in the checkout flow, improving responsiveness on older devices.</p>
+                    </div>
+                </div>
+                <div class="job job-earlier">
+                    <div class="details"><span class="where">Accenture · Cebu, Philippines</span><span class="year">Mar 2011 — June 2012</span></div>
+                    <div class="job-details">
+                        <div class="profession">Software Engineer</div>
+                        <p class="description">Worked on SAP ABAP and Siebel customizations for enterprise client engagements after completing Accenture’s technical delivery program — my first exposure to structured release cycles, QA gates, and a client’s change-control process.</p>
+                    </div>
+                </div>
+                <div class="job job-earlier">
+                    <div class="details"><span class="where">NCR · Cebu, Philippines</span><span class="year">Jan 2007 — Dec 2010</span></div>
+                    <div class="job-details">
+                        <div class="profession">Software Development Engineer</div>
+                        <p class="description">Customized and extended NCR’s self-checkout POS codebase for retail clients, working through hardware and software integration issues — where my kiosk and printer experience started.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Skills-->
+            <div class="box" id="skills">
+                <h2>Skills</h2>
+                <div class="skill-group">
+                    <div class="item-skills">Languages</div>
+                    <span class="skill">Swift</span><span class="skill">Dart</span><span class="skill">Objective-C</span>
+                </div>
+                <div class="skill-group">
+                    <div class="item-skills">iOS</div>
+                    <span class="skill">SwiftUI</span><span class="skill">UIKit</span><span class="skill">Combine</span><span class="skill">Core Data</span><span class="skill">XCTest</span><span class="skill">Xcode</span><span class="skill">Instruments</span><span class="skill">SPM</span><span class="skill">CocoaPods</span><span class="skill">App Store Connect</span><span class="skill">TestFlight</span><span class="skill">Push Notifications</span>
+                </div>
+                <div class="skill-group">
+                    <div class="item-skills">Cross-Platform</div>
+                    <span class="skill">Flutter</span><span class="skill">Riverpod</span><span class="skill">Retrofit</span><span class="skill">Dio</span><span class="skill">Platform Channels</span>
+                </div>
+                <div class="skill-group">
+                    <div class="item-skills">Architecture</div>
+                    <span class="skill">MVVM</span><span class="skill">MVC</span><span class="skill">Clean Architecture</span><span class="skill">Dependency Injection</span><span class="skill">Modularization</span>
+                </div>
+                <div class="skill-group">
+                    <div class="item-skills">CI/CD</div>
+                    <span class="skill">Fastlane</span><span class="skill">GitHub Actions</span><span class="skill">Automated code signing</span><span class="skill">Multi-target builds</span>
+                </div>
+                <div class="skill-group">
+                    <div class="item-skills">Backend &amp; Data</div>
+                    <span class="skill">REST</span><span class="skill">JSON</span><span class="skill">GraphQL</span><span class="skill">Firebase Crashlytics</span><span class="skill">Remote Config</span><span class="skill">Analytics</span>
+                </div>
+                <div class="skill-group">
+                    <div class="item-skills">Hardware</div>
+                    <span class="skill">Epson ePOS-Print SDK</span><span class="skill">Thermal printers</span><span class="skill">iPad kiosk deployment</span><span class="skill">Offline-first sync</span>
+                </div>
+                <div class="skill-group">
+                    <div class="item-skills">Practice</div>
+                    <span class="skill">Agile/Scrum</span><span class="skill">Code review</span><span class="skill">Technical documentation</span>
+                </div>
+            </div>
+            <!-- Education-->
+            <div class="box" id="education-box">
+                <h2>Education</h2>
+                <ul id="education">
+                    <li>
+                        <div class="year">Cebu, Philippines</div>
+                        <div class="description">
+                            <h3>Cebu Institute of Technology – University</h3>
+                            <p>Bachelor of Information Technology</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">Bonifacio<span class="text-primary"> Conde Jr</span></h1>
-                    <div class="subheading mb-1">iOS &amp; Flutter Developer</div>
-                    <div class="subheading mb-5">Cebu, Philippines · Remote (GMT+8, overlaps EU/MENA) · <a href="mailto:jay.r.conde24@gmail.com">jay.r.conde24@gmail.com</a></div>
-                    <p class="lead mb-4">I’m a mobile developer working mainly on iOS, with the rest of my time across Flutter and POS and retail systems. At Solo I worked on white‑label iOS apps and iPad kiosk software for F&amp;B brands; after the product was acquired by Foodics in 2022, I kept contributing to their mobile apps in Swift and Flutter.</p>
-                    <p class="lead mb-5">Most of my work has been on the practical side — helping make releases repeatable across branded builds, keeping older codebases stable, and getting kiosk and printer hardware to behave reliably in real service conditions. I’ve worked remotely with teams in Riyadh, Singapore, and Australia, and I’m happy picking up an existing codebase and working within a team’s conventions.</p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://linkedin.com/in/bonifacio-conde-ios" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a><a class="social-icon" href="https://github.com/bonifacioconde" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:jay.r.conde24@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <!-- Contact-->
+            <div class="box" id="contact">
+                <h2>Contact</h2>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="contact-item">
+                            <span class="icon"><i class="fas fa-envelope"></i></span><span class="title">Email</span>
+                            <div class="description"><a href="mailto:jay.r.conde24@gmail.com">jay.r.conde24@gmail.com</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="contact-item">
+                            <span class="icon"><i class="fas fa-location-dot"></i></span><span class="title">Location</span>
+                            <div class="description">Cebu, Philippines</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="contact-item">
+                            <span class="icon"><i class="fab fa-linkedin-in"></i></span><span class="title">LinkedIn</span>
+                            <div class="description"><a href="https://linkedin.com/in/bonifacio-conde-ios" target="_blank" rel="noopener">bonifacio-conde-ios</a></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="contact-item">
+                            <span class="icon"><i class="fab fa-github"></i></span><span class="title">GitHub</span>
+                            <div class="description"><a href="https://github.com/bonifacioconde" target="_blank" rel="noopener">bonifacioconde</a></div>
+                        </div>
                     </div>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Core Stack</div>
-                    <ul class="fa-ul mb-4">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span><strong>Languages:</strong> Swift, Dart, Objective-C
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span><strong>iOS:</strong> SwiftUI, UIKit, Combine, Core Data, XCTest, Xcode, Instruments, SPM, CocoaPods, App Store Connect, TestFlight, Push Notifications
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span><strong>Cross-Platform:</strong> Flutter (Riverpod, Retrofit, Dio), Platform Channels
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span><strong>Architecture:</strong> MVVM, MVC, Clean Architecture, Dependency Injection, Modularization
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span><strong>CI/CD:</strong> Fastlane, GitHub Actions, automated code signing, multi-target builds
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span><strong>Backend &amp; Data:</strong> REST, JSON, GraphQL, Firebase (Crashlytics, Remote Config, Analytics)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span><strong>Hardware:</strong> Epson ePOS-Print SDK, thermal printers, iPad kiosk deployment, offline-first sync
-                        </li>
-                        <li class="mb-0">
-                            <span class="fa-li"><i class="fas fa-check"></i></span><strong>Practice:</strong> Agile/Scrum, code review, technical documentation
-                        </li>
-                    </ul>
-                    <div class="subheading mb-3">Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-apple"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-swift"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-google-play"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-git-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-github"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-figma"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-jira"></i></li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">iOS Developer</h3>
-                            <div class="subheading mb-3">Appetiser Apps · Australia (Remote)</div>
-                            <ul class="fa-ul mb-0">
-                                <li>
-                                    <span class="fa-li"><i class="fas fa-angle-right text-primary"></i></span>Worked on livestock tracking, paddock treatment records, and reporting for <strong>FarmApp</strong> in Swift/UIKit — <strong>MapKit</strong> overlays and <strong>Core Location</strong> for paddock boundaries, with records written to <strong>Core Data</strong> first and reconciled against the API on reconnect, so the app stayed usable in zero-signal field conditions.
-                                </li>
-                                <li>
-                                    <span class="fa-li"><i class="fas fa-angle-right text-primary"></i></span>Built iOS features for <strong><a href="https://www.thedynaapp.com/" target="_blank" rel="noopener">Dyna</a></strong
-                                    >, a food discovery and review app, in <strong>SwiftUI</strong> and UIKit — restaurant search with debounced queries and paginated results, saved places, the review posting flow, and the profile and follow screens.
-                                </li>
-                                <li>
-                                    <span class="fa-li"><i class="fas fa-angle-right text-primary"></i></span>Wrote the networking layer in Swift with <strong>URLSession</strong>, <strong>Codable</strong>, and <strong>async/await</strong> behind a protocol-backed client, and covered it and the view models in <strong>XCTest</strong> by stubbing responses through a custom <strong>URLProtocol</strong>, so tests ran offline and deterministically in CI.
-                                </li>
-                                <li>
-                                    <span class="fa-li"><i class="fas fa-angle-right text-primary"></i></span>Traced recurring crashes and jank in legacy <strong>Objective-C</strong> and Swift projects using <strong>Instruments</strong> and <strong>Crashlytics</strong> stack traces — unowned references outliving their owners, and image decode running on the main thread during scrolling — and fixed them at the source.
-                                </li>
-                                <li>
-                                    <span class="fa-li"><i class="fas fa-angle-right text-primary"></i></span>Automated App Store and TestFlight submissions with <strong>Fastlane</strong>, using match for code signing so release builds did not depend on one machine's keychain.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Jan 2025 - Aug 2026</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Software Engineer — iOS &amp; Flutter</h3>
-                            <div class="subheading mb-3">Foodics · Riyadh, Saudi Arabia (Remote)</div>
-                            <ul class="fa-ul mb-0">
-                                <li>
-                                    <span class="fa-li"><i class="fas fa-angle-right text-primary"></i></span>Helped consolidate signing, screenshot generation, and store submission into shared Fastlane lanes run from GitHub Actions, which made per-brand releases noticeably quicker and more repeatable.
-                                </li>
-                                <li>
-                                    <span class="fa-li"><i class="fas fa-angle-right text-primary"></i></span>Built cross-platform features in Flutter using Riverpod for state management and Retrofit for networking, so a feature could be implemented once rather than twice.
-                                </li>
-                                <li>
-                                    <span class="fa-li"><i class="fas fa-angle-right text-primary"></i></span>Contributed to stability work on an inherited post-acquisition codebase — adding structured logging, working through frequent crashes, and adding tests around the checkout flow.
-                                </li>
-                                <li>
-                                    <span class="fa-li"><i class="fas fa-angle-right text-primary"></i></span>Reviewed Swift and Dart pull requests and helped keep the team's review checklist up to date.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2022 - Dec 2024</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">iOS Developer — White-Label &amp; Kiosk Products</h3>
-                            <div class="subheading mb-3">Solo · Riyadh, Saudi Arabia (Remote) — product and team acquired by Foodics, 2022</div>
-                            <ul class="fa-ul mb-0">
-                                <li>
-                                    <span class="fa-li"><i class="fas fa-angle-right text-primary"></i></span>Worked on white-label iOS ordering apps for F&amp;B brands from a shared configurable codebase, with per-brand theming, feature flags, and remote config.
-                                </li>
-                                <li>
-                                    <span class="fa-li"><i class="fas fa-angle-right text-primary"></i></span>Contributed to an iPad kiosk app that renders each merchant's branding and menu from their account configuration, and integrated the Epson ePOS-Print SDK with retry logic and an offline print queue so receipts still printed when the network dropped.
-                                </li>
-                                <li>
-                                    <span class="fa-li"><i class="fas fa-angle-right text-primary"></i></span>Helped template the Fastlane lanes so brand builds could be shipped from a single command instead of by hand.
-                                </li>
-                                <li>
-                                    <span class="fa-li"><i class="fas fa-angle-right text-primary"></i></span>Took part in moving the app towards MVVM with dependency-injected services, and added unit tests as the structure allowed.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Nov 2018 - June 2022</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">iOS Developer</h3>
-                            <div class="subheading mb-3">Browzzin · Singapore (Remote) — AI-powered fashion social commerce</div>
-                            <ul class="fa-ul mb-0">
-                                <li>
-                                    <span class="fa-li"><i class="fas fa-angle-right text-primary"></i></span>Built outfit-discovery, share, and shop screens for an AI outfit-recognition shopping app in Swift/UIKit.
-                                </li>
-                                <li>
-                                    <span class="fa-li"><i class="fas fa-angle-right text-primary"></i></span>Improved feed scrolling on older devices by moving image decode off the main thread and adding prefetch caching.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Mar 2017 - Oct 2018</span></div>
-                    </div>
-                    <h2 class="mb-4 mt-5">Earlier Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">iOS Developer</h3>
-                            <div class="subheading mb-3">UpNixt Pte Ltd · Singapore (Remote)</div>
-                            <p class="mb-0">Worked on itinerary sync and cold-start time for a social travel app, shipping regular releases alongside UI/UX and backend teams across several time zones.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Nov 2013 - Feb 2017</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Software Engineer</h3>
-                            <div class="subheading mb-3">SG Coders Pte Ltd · Singapore</div>
-                            <p class="mb-0">Used Instruments to find and remove main-thread blocking in the checkout flow, improving responsiveness on older devices.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Aug 2012 - Aug 2013</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Software Engineer</h3>
-                            <div class="subheading mb-3">Accenture · Cebu, Philippines</div>
-                            <p class="mb-0">Worked on SAP ABAP and Siebel customizations for enterprise client engagements after completing Accenture's technical delivery program — my first exposure to structured release cycles, QA gates, and a client's change-control process.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Mar 2011 - June 2012</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Software Development Engineer</h3>
-                            <div class="subheading mb-3">NCR · Cebu, Philippines</div>
-                            <p class="mb-0">Customized and extended NCR's self-checkout POS codebase for retail clients, working through hardware and software integration issues — where my kiosk and printer experience started.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Jan 2007 - Dec 2010</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Cebu Institute of Technology – University</h3>
-                            <div class="subheading mb-3">Bachelor of Information Technology</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Cebu, Philippines</span></div>
-                    </div>
-                </div>
-            </section>
+            </div>
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
