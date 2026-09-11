@@ -1,9 +1,12 @@
-// 
+//
 // Styles
-// 
+//
 
 // Import variables
 @import "./variables.scss";
+
+// Open Sans — the Kendall theme's typeface
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
 
 // Import Bootstrap
 @import "bootstrap/scss/bootstrap.scss";
@@ -12,8 +15,10 @@
 @import "./global.scss";
 
 // Components
-@import "./components/sidenav.scss";
-@import "./components/icons.scss";
+@import "./components/job.scss";
+@import "./components/timeline.scss";
+@import "./components/skills.scss";
+@import "./components/contact.scss";
 
 // Sections
 @import "./sections/resume-section.scss";

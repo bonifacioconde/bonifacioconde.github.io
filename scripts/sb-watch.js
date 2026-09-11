@@ -63,6 +63,11 @@ function _processFile(filePath, watchEvent) {
 }
 
 function _handlePug(filePath, watchEvent) {
+    // Partials (leading underscore) are included by a page, never rendered on
+    // their own, so touching one has to rebuild every page instead.
+    if (upath.basename(filePath).startsWith('_')) {
+        return watchEvent === 'change' ? _renderAllPug() : undefined;
+    }
     if (watchEvent === 'change') {
         if (filePath.match(/includes/) || filePath.match(/mixins/) || filePath.match(/\/pug\/layouts\//)) {
             return _renderAllPug();

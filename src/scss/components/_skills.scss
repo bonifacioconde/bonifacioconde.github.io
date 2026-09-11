@@ -1,0 +1,26 @@
+//
+// Skill chips
+//
+
+.skill-group {
+    margin-bottom: 0.75rem;
+}
+
+.item-skills {
+    color: $navy;
+    padding: 5px 0;
+    margin-bottom: 2px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.skill {
+    color: #fff;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    background: $navy-dark;
+    position: relative;
+    font-size: 0.85em;
+}
