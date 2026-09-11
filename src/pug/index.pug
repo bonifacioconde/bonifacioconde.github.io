@@ -144,35 +144,35 @@ html(lang='en')
                                 li
                                     span.fa-li
                                         i.fas.fa-angle-right.text-primary
-                                    | Worked on livestock tracking, paddock treatment records, and reporting screens for <strong>FarmApp</strong>, helping build offline-first map and record sync in Swift/UIKit for use in low-signal field conditions.
+                                    | Worked on livestock tracking, paddock treatment records, and reporting for <strong>FarmApp</strong> in Swift/UIKit — <strong>MapKit</strong> overlays and <strong>Core Location</strong> for paddock boundaries, with records written to <strong>Core Data</strong> first and reconciled against the API on reconnect, so the app stayed usable in zero-signal field conditions.
                                 li
                                     span.fa-li
                                         i.fas.fa-angle-right.text-primary
-                                    | Built iOS features for <strong><a href="https://www.thedynaapp.com/" target="_blank" rel="noopener">Dyna</a></strong>, a food discovery and review app — restaurant search, saved places, and the review and photo posting flow, plus the profile and social screens that let diners follow each other and venues.
+                                    | Built iOS features for <strong><a href="https://www.thedynaapp.com/" target="_blank" rel="noopener">Dyna</a></strong>, a food discovery and review app — restaurant search with debounced queries and paginated results, saved places, and a review flow using <strong>PHPickerViewController</strong> with client-side image downscaling before upload, plus the profile and follow screens.
                                 li
                                     span.fa-li
                                         i.fas.fa-angle-right.text-primary
-                                    | Fixed recurring crashes across several legacy Objective-C and Swift client projects, and helped move networking code behind a testable service layer.
+                                    | Wrote the networking layer in <strong>Swift</strong> with <strong>URLSession</strong>, <strong>Codable</strong>, and <strong>async/await</strong>, behind a protocol-backed client so screens could be driven by a stub in tests, and modelled each screen's loading, empty, and error states as an explicit enum rather than scattered flags.
                                 li
                                     span.fa-li
                                         i.fas.fa-angle-right.text-primary
-                                    | Integrated REST APIs and handled the loading, empty, and error states for each screen, so the UI stayed predictable on slow or flaky connections.
+                                    | Traced recurring crashes in legacy <strong>Objective-C</strong> and Swift projects with <strong>Instruments</strong> and <strong>Crashlytics</strong> stack traces — unowned references outliving their owners, and UI work landing off the main thread — and fixed them at the source rather than by adding nil checks.
                                 li
                                     span.fa-li
                                         i.fas.fa-angle-right.text-primary
-                                    | Prepared App Store and TestFlight builds, managed provisioning profiles and certificates, and wrote the release notes that went out with each submission.
+                                    | Built list and feed screens with <strong>diffable data sources</strong> and compositional layout, moving image decode off the main thread and prefetching ahead of scroll to keep scrolling smooth on older devices.
                                 li
                                     span.fa-li
                                         i.fas.fa-angle-right.text-primary
-                                    | Monitored Firebase Crashlytics after each release, triaged incoming issues, and turned reproducible ones into tickets with the steps and device details attached.
+                                    | Implemented Figma designs in <strong>Auto Layout</strong> and <strong>SwiftUI</strong>, supporting <strong>Dynamic Type</strong>, dark mode through asset catalog colour sets, and safe-area handling from SE to Pro Max.
                                 li
                                     span.fa-li
                                         i.fas.fa-angle-right.text-primary
-                                    | Implemented designs from Figma handoffs, supporting Dynamic Type, dark mode, and a range of screen sizes from SE to Pro Max.
+                                    | Automated App Store and TestFlight submissions with <strong>Fastlane</strong>, using match for code signing so release builds did not depend on one machine's keychain.
                                 li
                                     span.fa-li
                                         i.fas.fa-angle-right.text-primary
-                                    | Added unit tests around view models and networking, and wrote setup notes in the README so new developers could get the projects running on their own.
+                                    | Added <strong>XCTest</strong> coverage for view models and the networking layer, stubbing responses through a custom <strong>URLProtocol</strong> so tests ran offline and deterministically in CI.
                                 li
                                     span.fa-li
                                         i.fas.fa-angle-right.text-primary
