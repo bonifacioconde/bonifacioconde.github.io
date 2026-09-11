@@ -1,0 +1,103 @@
+//
+// Education timeline — year on the left, panel on the right with a notch
+// pointing back at the vertical rule.
+//
+
+#education {
+    margin-top: 20px;
+    margin-bottom: 0;
+    position: relative;
+    padding: 1em 0;
+    list-style: none;
+
+    &:before {
+        width: 5px;
+        height: 100%;
+        position: absolute;
+        left: 35px;
+        top: 0;
+        content: ' ';
+        display: block;
+        background: linear-gradient(
+            to bottom,
+            #fff 0%,
+            $navy-dark 7%,
+            $navy-dark 89%,
+            #fff 100%
+        );
+    }
+
+    li {
+        width: 100%;
+        z-index: 2;
+        position: relative;
+        float: left;
+    }
+
+    .year {
+        width: 14%;
+        background: #fff;
+        padding: 10px;
+        font-weight: 700;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .description {
+        width: 83%;
+        display: inline-block;
+        background: $panel;
+        margin-bottom: 10px;
+        position: relative;
+        padding: 10px;
+        border-bottom: 1px solid $panel-border;
+        border-right: 1px solid $panel-border;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 14px;
+            left: -16px;
+            height: 0;
+            width: 0;
+            border: solid transparent;
+            border-right-color: $panel;
+            border-width: 8px;
+            pointer-events: none;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            margin: 0;
+            padding: 0;
+            font-weight: 700;
+        }
+
+        p {
+            margin-top: 5px;
+            margin-bottom: 0;
+            padding: 0;
+        }
+    }
+}
+
+// The timeline's year column is too narrow to be readable on phones, so it
+// stacks there instead.
+
+@include media-breakpoint-down(md) {
+    #education {
+        &:before {
+            display: none;
+        }
+
+        .year,
+        .description {
+            width: 100%;
+            display: block;
+        }
+
+        .description:after {
+            display: none;
+        }
+    }
+}

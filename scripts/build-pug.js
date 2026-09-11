@@ -10,6 +10,7 @@ sh.find(srcPath).forEach(_processFile);
 function _processFile(filePath) {
     if (
         filePath.match(/\.pug$/)
+        && !upath.basename(filePath).startsWith('_')
         && !filePath.match(/include/)
         && !filePath.match(/mixin/)
         && !filePath.match(/\/pug\/layouts\//)

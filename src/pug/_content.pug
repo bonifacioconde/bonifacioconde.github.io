@@ -1,0 +1,120 @@
+//- Resume content for this branch. index.pug is layout only, so this is the
+    only file that should differ between variant branches.
+-
+    var r = {
+      name: 'Bonifacio Conde Jr',
+      title: 'iOS & Flutter Developer',
+      location: 'Cebu, Philippines',
+      availability: 'Remote (GMT+8, overlaps EU/MENA)',
+      meta: {
+        description: 'Bonifacio Conde Jr — iOS & Flutter Developer. Mobile engineering with a focus on iOS, including white-label ordering and kiosk apps for F&B brands.'
+      },
+      summary: [
+        'I’m a mobile developer working mainly on iOS, with the rest of my time across Flutter and POS and retail systems. At Solo I worked on white‑label iOS apps and iPad kiosk software for F&amp;B brands; after the product was acquired by Foodics in 2022, I kept contributing to their mobile apps in Swift and Flutter.',
+        'Most of my work has been on the practical side — helping make releases repeatable across branded builds, keeping older codebases stable, and getting kiosk and printer hardware to behave reliably in real service conditions. I’ve worked remotely with teams in Riyadh, Singapore, and Australia, and I’m happy picking up an existing codebase and working within a team’s conventions.'
+      ],
+      skills: [
+        { label: 'Languages', items: ['Swift', 'Dart', 'Objective-C'] },
+        { label: 'iOS', items: ['SwiftUI', 'UIKit', 'Combine', 'Core Data', 'XCTest', 'Xcode', 'Instruments', 'SPM', 'CocoaPods', 'App Store Connect', 'TestFlight', 'Push Notifications'] },
+        { label: 'Cross-Platform', items: ['Flutter', 'Riverpod', 'Retrofit', 'Dio', 'Platform Channels'] },
+        { label: 'Architecture', items: ['MVVM', 'MVC', 'Clean Architecture', 'Dependency Injection', 'Modularization'] },
+        { label: 'CI/CD', items: ['Fastlane', 'GitHub Actions', 'Automated code signing', 'Multi-target builds'] },
+        { label: 'Backend & Data', items: ['REST', 'JSON', 'GraphQL', 'Firebase Crashlytics', 'Remote Config', 'Analytics'] },
+        { label: 'Hardware', items: ['Epson ePOS-Print SDK', 'Thermal printers', 'iPad kiosk deployment', 'Offline-first sync'] },
+        { label: 'Practice', items: ['Agile/Scrum', 'Code review', 'Technical documentation'] }
+      ],
+      work: [
+        {
+          position: 'iOS Developer',
+          company: 'Appetiser Apps',
+          note: 'Australia (Remote)',
+          start: 'Jan 2025',
+          end: 'Aug 2026',
+          highlights: [
+            'Worked on livestock tracking, paddock treatment records, and reporting screens for <strong>FarmApp</strong>, helping build offline-first map and record sync in Swift/UIKit for use in low-signal field conditions.',
+            'Fixed recurring crashes across several legacy Objective-C and Swift client projects, and helped move networking code behind a testable service layer.',
+            'Took part in code review and estimation with the team, working to the client’s release schedule.'
+          ]
+        },
+        {
+          position: 'Software Engineer — iOS & Flutter',
+          company: 'Foodics',
+          note: 'Riyadh, Saudi Arabia (Remote)',
+          start: 'July 2022',
+          end: 'Dec 2024',
+          highlights: [
+            'Helped consolidate signing, screenshot generation, and store submission into shared Fastlane lanes run from GitHub Actions, which made per-brand releases noticeably quicker and more repeatable.',
+            'Built cross-platform features in Flutter using Riverpod for state management and Retrofit for networking, so a feature could be implemented once rather than twice.',
+            'Contributed to stability work on an inherited post-acquisition codebase — adding structured logging, working through frequent crashes, and adding tests around the checkout flow.',
+            'Reviewed Swift and Dart pull requests and helped keep the team’s review checklist up to date.'
+          ]
+        },
+        {
+          position: 'iOS Developer — White-Label & Kiosk Products',
+          company: 'Solo',
+          note: 'Riyadh, Saudi Arabia (Remote) — product and team acquired by Foodics, 2022',
+          start: 'Nov 2018',
+          end: 'June 2022',
+          highlights: [
+            'Worked on white-label iOS ordering apps for F&amp;B brands from a shared configurable codebase, with per-brand theming, feature flags, and remote config.',
+            'Contributed to an iPad kiosk app that renders each merchant’s branding and menu from their account configuration, and integrated the Epson ePOS-Print SDK with retry logic and an offline print queue so receipts still printed when the network dropped.',
+            'Helped template the Fastlane lanes so brand builds could be shipped from a single command instead of by hand.',
+            'Took part in moving the app towards MVVM with dependency-injected services, and added unit tests as the structure allowed.'
+          ]
+        },
+        {
+          position: 'iOS Developer',
+          company: 'Browzzin',
+          note: 'Singapore (Remote) — AI-powered fashion social commerce',
+          start: 'Mar 2017',
+          end: 'Oct 2018',
+          highlights: [
+            'Built outfit-discovery, share, and shop screens for an AI outfit-recognition shopping app in Swift/UIKit.',
+            'Improved feed scrolling on older devices by moving image decode off the main thread and adding prefetch caching.'
+          ]
+        }
+      ],
+      earlier: [
+        {
+          position: 'iOS Developer',
+          company: 'UpNixt Pte Ltd · Singapore (Remote)',
+          start: 'Nov 2013',
+          end: 'Feb 2017',
+          summary: 'Worked on itinerary sync and cold-start time for a social travel app, shipping regular releases alongside UI/UX and backend teams across several time zones.'
+        },
+        {
+          position: 'Software Engineer',
+          company: 'SG Coders Pte Ltd · Singapore',
+          start: 'Aug 2012',
+          end: 'Aug 2013',
+          summary: 'Used Instruments to find and remove main-thread blocking in the checkout flow, improving responsiveness on older devices.'
+        },
+        {
+          position: 'Software Engineer',
+          company: 'Accenture · Cebu, Philippines',
+          start: 'Mar 2011',
+          end: 'June 2012',
+          summary: 'Worked on SAP ABAP and Siebel customizations for enterprise client engagements after completing Accenture’s technical delivery program — my first exposure to structured release cycles, QA gates, and a client’s change-control process.'
+        },
+        {
+          position: 'Software Development Engineer',
+          company: 'NCR · Cebu, Philippines',
+          start: 'Jan 2007',
+          end: 'Dec 2010',
+          summary: 'Customized and extended NCR’s self-checkout POS codebase for retail clients, working through hardware and software integration issues — where my kiosk and printer experience started.'
+        }
+      ],
+      education: [
+        {
+          school: 'Cebu Institute of Technology – University',
+          degree: 'Bachelor of Information Technology',
+          where: 'Cebu, Philippines'
+        }
+      ],
+      contact: [
+        { icon: 'fas fa-envelope', label: 'Email', value: 'jay.r.conde24@gmail.com', href: 'mailto:jay.r.conde24@gmail.com' },
+        { icon: 'fas fa-location-dot', label: 'Location', value: 'Cebu, Philippines' },
+        { icon: 'fab fa-linkedin-in', label: 'LinkedIn', value: 'bonifacio-conde-ios', href: 'https://linkedin.com/in/bonifacio-conde-ios', external: true },
+        { icon: 'fab fa-github', label: 'GitHub', value: 'bonifacioconde', href: 'https://github.com/bonifacioconde', external: true }
+      ]
+    }
