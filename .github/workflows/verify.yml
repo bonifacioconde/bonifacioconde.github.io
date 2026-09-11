@@ -1,14 +1,17 @@
 name: Verify build
 
 # GitHub Pages serves this site directly from the committed docs/ folder
-# (Settings → Pages → Deploy from a branch → master → /docs), so there is no
+# (Settings → Pages → Deploy from a branch → <branch> → /docs), so there is no
 # deploy step here. This workflow only guards the one weakness of that setup:
 # forgetting to run `npm run build` before committing, which would leave the
 # published site stale relative to src/.
+#
+# Alternate resume versions live on variant/* branches, and the Pages source
+# branch is the switch for which one is live — so they need the same check.
 
 on:
   push:
-    branches: [master]
+    branches: [master, 'variant/**']
   pull_request:
   workflow_dispatch:
 
