@@ -10945,6 +10945,9 @@ a {
   margin-bottom: 0.4rem;
   line-height: 1.5em;
 }
+.job .stack {
+  padding-top: 0.5rem;
+}
 
 .job-earlier .description {
   margin-bottom: 0;

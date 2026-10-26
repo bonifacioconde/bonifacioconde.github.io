@@ -67,6 +67,10 @@ html(lang='en')
                             ul.highlights
                                 each point in job.highlights
                                     li!= point
+                            if job.stack
+                                .stack
+                                    each item in job.stack
+                                        span.skill= item
 
                 if r.earlier && r.earlier.length
                     h3.subsection Earlier Experience
