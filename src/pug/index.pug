@@ -43,6 +43,8 @@ html(lang='en')
                 h1
                     = r.name
                     span= r.title
+                if r.tagline
+                    .header-meta= r.tagline
                 .header-meta
                     = r.location + ' · ' + r.availability
 
@@ -91,6 +93,13 @@ html(lang='en')
                         .item-skills= group.label
                         each item in group.items
                             span.skill= item
+
+            // Apps shipped
+            if r.apps && r.apps.length
+                .box#apps
+                    h2 Apps Shipped (App Store)
+                    each app in r.apps
+                        span.skill= app
 
             // Education
             .box#education-box
