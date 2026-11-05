@@ -31,8 +31,8 @@
           start: 'Jan 2024',
           end: 'Aug 2026',
           highlights: [
-            'Shipped livestock tracking, paddock treatment records, and reporting for a <strong>farm management app</strong>, building offline-first map and record sync in Swift/UIKit that held up in zero-signal field conditions.',
-            'Worked through recurring crashes in legacy Objective-C/Swift codebases across <strong>6 client projects</strong>, isolating the network layer behind a testable service layer.'
+            'Shipped livestock tracking, paddock treatment records and reporting for a <strong>farm management app</strong>, with offline-first map and record sync (Swift/UIKit) that held up in zero-signal field conditions.',
+            'Cut recurring crashes across <strong>6 client apps</strong> (legacy Objective-C/Swift) by isolating the network layer behind a testable service layer.'
           ]
         },
         {
@@ -42,12 +42,14 @@
           start: 'July 2022',
           end: 'Dec 2023',
           highlights: [
-            'Cut per-brand release time from <strong>4 hours to 15 minutes</strong> by consolidating signing, screenshot generation, and App Store/Play submission into shared Fastlane lanes triggered from GitHub Actions.',
-            'Built <strong>iPad kiosk apps</strong> with receipt printing via Epson’s ePOS-Print SDK for iOS.',
-            'Improved stability on an inherited post-acquisition codebase by instrumenting structured logging, fixing the highest-frequency crashes, and adding regression coverage around the checkout flow.',
-            'Built the SwiftUI layer of an online food ordering app revamp, integrating a <strong>Kotlin Multiplatform (KMP)</strong> shared module and using <strong>SKIE</strong> to expose Kotlin Flow, suspend functions, and sealed classes as idiomatic Swift, before the project moved to Flutter.',
-            'Built cross-platform features in Flutter, using Riverpod for state management and Retrofit for networking, so each one is implemented once instead of separately on iOS and Android.',
-            'Reviewed Swift and Dart pull requests for a team of <strong>8</strong>, and wrote the review checklist the team uses.'
+            'Cut per-brand release time from <strong>4 hours to 15 minutes</strong> by consolidating signing, screenshot generation and App Store/Play submission into shared Fastlane lanes triggered from GitHub Actions.',
+            'Built <strong>iPad kiosk apps</strong> with receipt printing (Epson ePOS-Print SDK) running at about <strong>30 locations</strong>.',
+            'Stabilized an inherited post-acquisition app by adding structured logging, fixing the highest-frequency crashes and adding regression tests around the checkout flow.',
+            'Built the SwiftUI layer of a food-ordering app revamp on a <strong>Kotlin Multiplatform</strong> shared module, using <strong>SKIE</strong> to use Kotlin Flow, suspend functions and sealed classes as native Swift (project later moved to Flutter).',
+            'Built cross-platform features in Flutter (Riverpod, Retrofit) so each shipped once for iOS and Android, including the rewards feature, item customization, and a launch/splash optimization that cut splash-to-home time from <strong>3 minutes to 50 seconds</strong>.',
+            'Set up Flutter flavors and a client-templating flow that generates a new brand’s app flavor from a set of input values, with Fastlane build and App Store upload integration.',
+            'Used AI coding tools (GitHub Copilot, ChatGPT) to build Flutter features, write tests, debug data inconsistencies and review pull requests.',
+            'Reviewed Swift and Dart pull requests for a team of <strong>8</strong>, wrote the team’s review checklist, and shared stack knowledge with teammates.'
           ],
           stack: ['Swift', 'SwiftUI', 'Kotlin Multiplatform (iOS integration)', 'SKIE', 'Flutter', 'Riverpod', 'Retrofit', 'Fastlane', 'GitHub Actions', 'ePOS-Print SDK']
         },
@@ -58,9 +60,10 @@
           start: 'Nov 2018',
           end: 'June 2022',
           highlights: [
-            'Launched white-label iOS ordering apps for <strong>100 F&amp;B brands</strong> from a single configurable codebase with per-brand theming, feature flags, and remote config, cutting the work to launch a new brand from <strong>6 weeks to 10 days</strong>.',
-            'Shipped a single iPad kiosk app that renders each merchant’s branding and menu from their own account configuration, so a new brand goes live without a separate build, and integrated the Epson ePOS-Print SDK with retry logic and an offline print queue so receipts still printed when the network dropped mid-service.',
-            'Reduced per-brand deployment effort from <strong>6 days to 8 hours</strong> by templating Fastlane lanes so a single command shipped every brand build.',
+            'Launched <strong>100 white-label iOS ordering apps</strong> from one configurable codebase (theming, feature flags, remote config), cutting new-brand launch from <strong>6 weeks to 10 days</strong>.',
+            'Shipped one iPad kiosk app that loads each merchant’s branding and menu from account configuration, so a new brand goes live without a separate build.',
+            'Added retry logic and an offline print queue to the Epson ePOS-Print integration so receipts still printed when the network dropped mid-service.',
+            'Cut per-brand deployment effort from <strong>6 days to 8 hours</strong> by templating Fastlane lanes so one command shipped every brand build.',
             'Restructured the app to MVVM with dependency-injected services, raising unit-test coverage from <strong>60% to 85%</strong>.'
           ]
         },
@@ -71,8 +74,8 @@
           start: 'Mar 2017',
           end: 'Oct 2018',
           highlights: [
-            'Built the outfit-discovery, share, and shop flows for an AI outfit-recognition shopping app with <strong>10K</strong> users, in Swift/UIKit.',
-            'Smoothed feed scrolling on older devices by moving image decode off the main thread and adding prefetch caching.'
+            'Built the outfit-discovery, share and shop flows (Swift/UIKit) for an AI outfit-recognition shopping app with <strong>10K</strong> users.',
+            'Smoothed feed scrolling on older devices by moving image decoding off the main thread and adding prefetch caching.'
           ]
         },
         {
@@ -82,10 +85,7 @@
           start: 'Nov 2013',
           end: 'Feb 2017',
           highlights: [
-            'Developed iOS features for a travel planning and social app in Objective-C and UIKit, delivering itineraries to travelers based on bookings made through partner travel agencies.',
-            'Built map-based screens with Apple MapKit that plot itinerary stops, attractions, and restaurants as pins.',
-            'Integrated REST APIs to load agency-booked itineraries and destination content into the app.',
-            'Worked in a small startup team that supplied destination and itinerary content to travel agency partners.'
+            'Built MapKit itinerary screens (stops, attractions, restaurants) and the REST integrations that loaded agency-booked itineraries into a travel planning and social app (Objective-C, UIKit).'
           ]
         },
         {
@@ -95,11 +95,7 @@
           start: 'Aug 2012',
           end: 'Aug 2013',
           highlights: [
-            'Profiled with Instruments and removed main-thread blocking from geofencing screens, improving responsiveness on older devices.',
-            'Maintained and fixed bugs in a location-based app that triggers actions when users enter or leave defined zones, using Core Location and region monitoring.',
-            'Diagnosed and fixed location accuracy and trigger issues reported from production and QA across multiple iOS versions and device sizes.',
-            'Traced bugs to root cause using Xcode debugger instead of patching symptoms.',
-            'Worked within an existing Objective-C codebase using UIKit, keeping releases stable.'
+            'Used Instruments to remove main-thread blocking from geofencing screens, and fixed Core Location trigger and accuracy bugs across iOS versions and device sizes in an Objective-C app.'
           ]
         },
         {
@@ -109,7 +105,7 @@
           start: 'Mar 2011',
           end: 'June 2012',
           highlights: [
-            'Delivered SAP ABAP and Siebel customizations on enterprise client engagements after completing Accenture’s technical delivery program — my first exposure to structured release cycles, formal QA gates, and working to a client’s change-control process.'
+            'Delivered SAP ABAP and Siebel customizations at Accenture under client change-control.'
           ]
         },
         {
@@ -119,7 +115,7 @@
           start: 'Jan 2007',
           end: 'Dec 2010',
           highlights: [
-            'Customized and extended NCR’s self-checkout POS codebase for retail clients, resolving hardware and software integration issues — where the kiosk and printer work above started.'
+            'Extended NCR’s self-checkout POS software and resolved hardware/software integration issues (where my kiosk and printer work started).'
           ]
         }
       ],
